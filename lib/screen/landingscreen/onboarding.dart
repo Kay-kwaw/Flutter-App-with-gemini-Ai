@@ -33,16 +33,21 @@ Widget build(BuildContext context) {
                     height: 200.0,
                     width: 200.0,
                   ),
-                ),
-                const SizedBox(height: 20.0),
-                
-              ],
+                ), 
+              ]
             ),
           ),
-          const Padding(padding: EdgeInsets.all(15.0),
+          const Padding(padding: EdgeInsets.only(left: 15.0, bottom: 10.0),
             child: Text(
               'Reach Your\nArtificial Intelligence Goals',
               style: TextStyles.heading1,
+              textAlign: TextAlign.start,
+            ),
+          ),
+          const Padding(padding: EdgeInsets.only(left: 15.0, bottom: 60.0),
+            child: Text(
+              "Call your friends and family for\nfree with Gemini Ai Chatbot.",
+              style: TextStyles.heading5,
               textAlign: TextAlign.start,
             ),
           ),

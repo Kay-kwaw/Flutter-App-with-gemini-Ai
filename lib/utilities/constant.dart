@@ -66,7 +66,7 @@ class TextStyles {
   static const TextStyle heading5 = TextStyle(
     fontSize: 15.0,
     fontWeight: FontWeight.normal,
-    color: Colors.black,
+    color: Color.fromARGB(255, 181, 181, 181),
   );
   static const TextStyle heading3 = TextStyle(
     fontSize: 18.0,
