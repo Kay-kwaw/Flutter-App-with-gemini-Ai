@@ -1,11 +1,63 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chat_ai/utilities/constant.dart';
 
-class OnboardingScreen extends StatelessWidget {
-  static const routeName = '/';
-  const OnboardingScreen({super.key});
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold();
-  }
+  static const String id = '/splash_screen';
+
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    backgroundColor: Colors.black,
+    body: SafeArea(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start ,
+        children: [
+          const Padding(
+            padding: EdgeInsets.all(15.0),
+            child: Text(
+              'Gemini Ai Chatbot',
+              style: TextStyles.heading1,
+              textAlign: TextAlign.start,
+            ),
+          ),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Center(
+                  child: Image.asset(
+                    'assets/images/splash.png',
+                    height: 200.0,
+                    width: 200.0,
+                  ),
+                ),
+                const SizedBox(height: 20.0),
+                
+              ],
+            ),
+          ),
+          const Padding(padding: EdgeInsets.all(15.0),
+            child: Text(
+              'Reach Your\nArtificial Intelligence Goals',
+              style: TextStyles.heading1,
+              textAlign: TextAlign.start,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 30.0),
+            child: AppButtons.elevatedButton1(
+              onPressed: () {
+                Navigator.pushNamed(context, '/chat_screen');
+              },
+              text: 'Get Started',
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
+}
 }

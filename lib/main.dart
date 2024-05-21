@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       initialRoute: '/',
       routes: {
-        '/': (context) => const OnboardingScreen (),
+        '/': (context) => const SplashScreen (),
         '/chat': (context) => const ChatScreen(),
       },
     );
