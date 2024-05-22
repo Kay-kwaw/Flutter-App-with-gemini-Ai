@@ -55,7 +55,7 @@ Widget build(BuildContext context) {
             padding: const EdgeInsets.only(bottom: 30.0),
             child: AppButtons.elevatedButton1(
               onPressed: () {
-                Navigator.pushNamed(context, '/chat_screen');
+                Navigator.pushNamed(context, '/chat');
               },
               text: 'Get Started',
             ),
