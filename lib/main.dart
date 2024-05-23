@@ -4,7 +4,7 @@ import 'package:flutter_chat_ai/screen/landingscreen/onboarding.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 
 void main() {
-  Gemini.init(apiKey: '');
+  Gemini.init(apiKey: 'AIzaSyDPPm8rtUvS1GzLJyMdd7_mtk45C_jG1oI');
   runApp(const MyApp());
 }
 

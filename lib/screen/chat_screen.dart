@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ai/utilities/constant.dart';
+import 'package:flutter_gemini/flutter_gemini.dart';
+
+
+final gemini = Gemini.instance;
+
 
 class ChatScreen extends StatefulWidget {
   static const String id = '/chat';
