@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class AppColors {
   static const primary = Colors.black;
   static const textColor = Colors.white;
+  static const checkColor = Color.fromARGB(255, 235, 235, 235);
   static const secondary = Color.fromARGB(255, 248, 240, 169);
   static const Color primaryColor = Color(0xFF1C4A5A);
   static const Color backgroundColor = Color(0xFFF5F5F5);
@@ -50,7 +51,7 @@ class TextStyles {
   static const TextStyle heading1 = TextStyle(
     fontSize: 24.0,
     fontWeight: FontWeight.bold,
-    color: Colors.white,
+    color: Colors.black,
   );
 
   static const TextStyle Hheading1 = TextStyle(
@@ -72,7 +73,7 @@ class TextStyles {
   static const TextStyle heading3 = TextStyle(
     fontSize: 18.0,
     fontWeight: FontWeight.normal,
-    color: Colors.white,
+    color: Colors.black,
   );
   static const TextStyle heading4 = TextStyle(
     fontSize: 25.0,
