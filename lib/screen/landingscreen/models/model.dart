@@ -52,7 +52,7 @@ class Messages extends StatelessWidget {
             date,
             style: TextStyle(
               fontSize: 10,
-              color: isUser ? Colors.white : Colors.black,
+              color: isUser ? AppColors.accentColor2 : Colors.black,
             ),
           ),
         ],
