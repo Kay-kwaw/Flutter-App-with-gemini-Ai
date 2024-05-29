@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ai/utilities/constant.dart';
 
+// A model class to represent a message in the chat interface.
 class Message {
   final bool isUser;
   final String message;
   final DateTime date;
   final Icon icon;
+  // A constructor class for the Message model.
   Message(this.icon, {required this.isUser, required this.message, required this.date});
 }
 
@@ -15,7 +17,7 @@ class Messages extends StatelessWidget {
   final String date;
   const Messages({
     super.key,
-    required this.isUser,
+    required this.isUser, 
     required this.message,
     required this.date,
   });
