@@ -182,7 +182,7 @@ void _scrollToBottom() {
                             borderRadius: BorderRadius.circular(15),
                           ),
                           hintText: 'Type a message',
-                          hintStyle: const TextStyle(color: AppColors.TextColor),
+                          hintStyle: const TextStyle(color: AppColors.textColors),
                           suffixIcon: IconButton(
                             onPressed: () {
                               sendMessage();

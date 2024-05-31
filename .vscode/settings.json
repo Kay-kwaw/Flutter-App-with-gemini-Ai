@@ -1,6 +1,9 @@
 {
     "cSpell.words": [
+        "APIKEY",
         "ARGB",
         "landingscreen"
-    ]
+    ],
+    "files.autoSave": "afterDelay",
+    "audioCues.volume": 0
 }

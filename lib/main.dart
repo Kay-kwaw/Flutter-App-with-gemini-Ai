@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ai/screen/chat_screen.dart';
 import 'package:flutter_chat_ai/screen/landingscreen/onboarding.dart';
+import 'package:flutter_chat_ai/utilities/env.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 
 void main() {
-  Gemini.init(apiKey: 'AIzaSyDPPm8rtUvS1GzLJyMdd7_mtk45C_jG1oI');
+  Gemini.init(apiKey: Constants.apiKey,);
   runApp(const MyApp());
 }
 
